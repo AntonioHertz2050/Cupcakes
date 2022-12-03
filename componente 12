@@ -1,0 +1,10 @@
+< modelo >
+  < div >
+    < ul  class = " ml-auto espaço-x-4 itens flexíveis-centralizar justificar-centralizar fonte-texto médio-rosa-500 " >
+      < li >< NuxtLink  para = " / " > Home </ NuxtLink ></ li >
+      < li >< NuxtLink  to = " /about " > Sobre </ NuxtLink ></ li >
+      < li >< NuxtLink  to = " /cupcakes " > Cupcakes </ NuxtLink ></ li >
+      < li >< NuxtLink  to = " /help " > Ajuda </ NuxtLink ></ li >
+< > / ul
+< >/div
+</ modelo >
