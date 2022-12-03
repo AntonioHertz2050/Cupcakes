@@ -1,0 +1,23 @@
+< modelo >
+< classe div = " container mx-auto p-4 w-2/3 " >
+    < h1  class = " fontsweety text-2xl text-pink-500 " >Não consegui achar o que procurava?</ h1 >
+< classe h2 = " text-2xl text-pink-500 " >Entre em contato</ h2 >
+    < ação do formulário  = " " >
+        < div  class = " flex flex-col " >
+< rótulo para = " nome " >Nome</ rótulo >
+< tipo de entrada = " texto " nome = " nome " id = " nome " classe = " borda borda-rosa-300 foco:contorno-nenhum:borda-rosa-300 p-2 arredondado-lg " >
+< >/div
+        < div  class = " flex flex-col " >
+< rótulo para = " email " >E-mail</ rótulo >
+< tipo de entrada = " email " nome = " email " id = " email " classe = " borda borda-rosa-300 foco:contorno-nenhum foco:borda-rosa-300 p-2 arredondado-lg " >
+< >/div
+< classe div = " flex flex-col pb-4 " >
+< rótulo para = " mensagem " >Mensagem</ rótulo >
+            < textarea  name = " message "  id = " message "  cols = " 30 "  rows = " 10 "  class = " border border-pink-300 focus:outline-none focus:border-pink-300 p-2 rounded-lg " ></ área de texto >
+< >/div
+        < div  class = " flex justify-center " >
+< classe de botão = " bg-pink-500 text-white hover:bg-pink-400 p-2 rounded-lg w-40 " >Enviar</ botão >
+< >/div
+< >/ forma
+< >/div
+</ modelo >
