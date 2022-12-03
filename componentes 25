@@ -1,0 +1,15 @@
+< modelo >
+  < div  class = " container mx-auto text-center h-96 " >
+< classe h1 = " text-5xl text-pink-500 font-bold pb-4 " >Pedido Confirmado</ h1 >
+    < p  class = " text-2xl text-gray-500 pb-4 " >O pedido já está sendo enviado para preparado</ p >
+
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+}
+< de >/script
+
+< estilo >
+< estilo >
