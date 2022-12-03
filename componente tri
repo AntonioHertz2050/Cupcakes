@@ -1,0 +1,102 @@
+< modelo >
+  < div >
+    < div  class = " flex text-white text-lg "  v-if = " login " >
+    < div  classe = " ml-auto " >
+      < NuxtLink  to = " login " >< h1  class = " inline fontsweety text-base text-pink-500 " > Login</ h1 ></ NuxtLink >
+< >/div
+< >/div
+    < div  class = " flex text-white text-lg " @ click = " toggleModal () "  v-else >
+    < div  classe = " ml-auto " >
+      < NuxtLink  para = " " >< font -awesome-icon  icon = " fa-solid fa-cart-shopping "  class = " text-pink-500 " /> < h1  class = " inline fontsweety text-base text-pink- 500 " > Meu Carrinho</ h1 ></ NuxtLink >
+< >/div
+< >/div
+    < div  v-if = " showModal "  class = " estouro-x-oculto estouro-y-auto fixo inset-0 z-50 esboço-nenhum foco:contorno-nenhum justificar-centralizar itens-centralizar flex " >
+      < div  class = " relativa w-auto my-6 mx-auto max-w-6xl " >
+        <!-- conteúdo -->
+        < div  class = " borda-0 arredondado-lg shadow-lg relativo flex flex-col w-completo bg-branco contorno-nenhum foco:contorno-nenhum " >
+          <!-- cabeçalho -->
+          < div  class = " itens flexíveis-início justificar-entre p-5 borda-b borda-sólida borda-slate-200 arredondado-t " >
+< classe h3 = " text-3xl font-semibold text-pink-500 " >
+              Carrinho de Compras
+            </ h3 >
+            < button  class = " p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none "  v-on : click = " alternânciaModal () " >
+              < span  class = " bg-transparent text-black opacity-5 h-6 w-6 text-2xl block sketch-none focus:outline-none " >
+                ×
+< de >/span
+            </ botão >
+< >/div
+          <!-- corpo -->
+< classe div = " relativo p-6 flex-auto " >
+< div class = " grade grid-cols-6 text-lg font-semibold text-pink-500 " >
+< >< h1 / h1 >
+< classe h1 = " col-span-2 " >Nome</ h1 >
+< classe h2 = " mx-auto " >Preço</ h2 >
+< classe h3 = " mx-auto " >Quantidade</ h3 >
+< >/div
+< div class = " grade grid-cols-6 items-center pb-2 text-lg font-semibold text-pink-500 " v-for = " i in cart " : key = " i " >
+< img : src = " takeImage ( i . img ) " alt = " " classe = " h-32 arredondado mx - auto " >
+              < div  class = " flex flex-col col-span-2 " >
+                < classe h1  = " " > {{ i . nome }}</ h1 >
+< >/div
+              < div  classe = " pl-5 " >
+< classe h1 = " " >{{ convertValue ( i . oldValue ) }} </ h1 >
+< >/div
+              < div  classe = " mx-auto " >
+< classe h1 = " " >x1</ h1 >
+< >/div
+              < div  classe = " mx-auto " >
+< classe de botão = " bg-pink-500 text-white px-4 py-2 rounded-lg " @ click = " removeItem ( i . id ) " >< font -awesome-icon icon = " fa-solid fa-xmark " Botão /></ >
+< >/div
+< >/div
+< >/div
+          <!-- rodapé -->
+          < div  class = " itens flexíveis-centro justificar-final p-6 borda-t borda-sólida borda-slate-200 arredondado-b " >
+            < button  class = " text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-sm px- 6 py-3 contorno arredondado-nenhum foco:contorno-nenhum mr-1 mb-1 facilidade-transição linear-toda a duração-150 "  type = " botão "  v-on : click = " toggleModal () " >
+              fechar
+            </ botão >
+            < NuxtLink  para = " checkout " >
+            < botão  class = " texto-branco bg-verde-500 h-12 fonte arredondada-negrito maiúsculo px-6 py-2 texto-sm esboço-nenhum foco:contorno-nenhum mr-1 mb-1 facilidade-transição linear-tudo duração-150 "  type = " botão "  v-on : click = " toggleModal () " >
+              Finalizar compras
+            </ botão >
+            </ NuxtLink >
+< >/div
+< >/div
+< >/div
+< >/div
+    < div  v-if = " showModal "  class = " opacity-25 fixed insert-0 z-40 bg-black " ></ div >
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+  nome :  " grande-modal " ,
+  dados () {
+    retornar {
+      showModal :  falso ,
+      login :  falso ,
+    }
+  },
+  métodos : {
+    toggleModal :  função (){
+      isso . showModal  =  ! isso . showModal ;
+    },
+    convertValue ( valor ) {
+       valor de retorno . toLocaleString ( ' pt-BR ' , {estilo :  ' moeda ' , moeda :  ' BRL ' })
+    },
+    takeImage ( img ) {
+return require ( ' @/assets/cupcakes/ ${ img } ' )
+    },
+    removeItem ( id ) {
+      isso . $ loja . dispatch ( ' removeCupcakeFromCart ' , id)
+    }
+  },
+  calculado : {
+    carrinho () {
+      devolva  isso . $ loja . estado . carrinho
+    }
+  },
+  criado () {
+this.$store.dispatch('carrinho')
+  }
+}
+< de >/script
