@@ -1,0 +1,7 @@
+nhas (5 sloc)189 Bytes
+
+< modelo >
+    < div  class = " h-full " >
+        < NuxtLink  para = " / " >< img  class = " h-full "  src = " @/assets/logo.png "  alt = " logo " /></ NuxtLink >
+< >/div
+</ modelo >
