@@ -1,0 +1,54 @@
+< modelo >
+  < div  classe = " " >
+< classe h1 = " text-pink-500 text-4xl font-black p-6 fontsweety " > {{ name }} </ h1 >
+< div class = " grade grid-cols-5 place-content-center gap-4 p-6 " >
+    < div  v-for = " c em cupcakes " : key = " c "  class = " text-center p-4 " >
+< NuxtLink : to = " linkItem ( c . id ) " >< img : src = " takeImage ( c . img ) " alt = " Foto Cupcake " classe = " mx-auto arredondado - 3xl w-72 h-80 " / ></ NuxtLink >
+      < NuxtLink : to = " linkItem ( c . id ) "  class = " text-black text-lg hover: text-gray-300 " > {{ c . nome }} </ NuxtLink >
+< classe h2 = " line-through font-bold fontsweety text-gray-500 " > {{ convertValue ( c . oldValue ) }} </ h2 >
+< classe h3 = " font-bold text-2xl text-pink-500 fontsweety " > {{ convertValue ( c . newValue ) < >/ h3
+      < div  class = " flex flex-row " >
+    < NuxtLink : to = " linkItem ( c . id ) "  class = " w-full " >
+< button class = " text-white font-thin bg-pink-500 arredondado p-3 border border-pink-100 hover:bg-pink-400 w-full " > Detalhes</ botão >
+    </ NuxtLink >
+    < NuxtLink  para = " " >
+< botão @ clique = " addItem ( c . id ) " class = " text-white font-thin bg-pink-500 arredondado p-3 border border-pink-100 hover:bg-pink-400 h-full " > < font -awesome-icon icon = " fa-solid fa-cart-shopping " /></ botão >
+    </ NuxtLink >
+< >/div
+< >/div
+< >/div
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+  dados () {
+    retornar {
+        nome :  " Lançamentos " ,
+        
+    };
+  },
+  criado (){
+isso . $ loja . despacho ( ' getCupcakes ' )
+  },
+  calculado : {
+    cupcakes (){
+devolva isso . $ loja . . _ bolos de copo |
+    }
+  },
+  métodos : {
+    convertValue ( valor ) {
+       valor de retorno . toLocaleString ( ' pt-BR ' , {estilo :  ' moeda ' , moeda :  ' BRL ' })
+    },
+    takeImage ( img ) {
+return require ( ' @/assets/cupcakes/ ${ img } ' )
+    },
+    linkItem ( id ) {
+return ' /cupcake/ ${ id } '
+    },
+    addItem ( id ) {
+      isso . $ loja . dispatch ( ' addCupcakeToCart ' , id)
+    }
+  }
+};
+< de >/script
