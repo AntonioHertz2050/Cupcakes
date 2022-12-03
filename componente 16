@@ -1,0 +1,7 @@
+< modelo >
+  < div  class = " text-pink-500 text-3xl " >
+< um href = " " >< font -awesome-icon icon = " fa-brands fa-facebook " /></ a >
+    < a  href = " " >< font -awesome-icon  icon = " fa-brands fa-twitter " /></ a >
+    < a  href = " " >< font -awesome-icon  icon = " fa-brands fa-instagram " /></ a >
+< >/div
+</ modelo >
