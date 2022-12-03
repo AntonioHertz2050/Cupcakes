@@ -1,0 +1,17 @@
+< modelo >
+  < div >
+    < Controle deslizante />
+    < Banner />
+    < Lançamentos />
+Cupcakes <Home />
+    < Mais populares />
+    < Comentários />
+< >/div
+</ modelo >
+
+< de script >
+ padrão de exportação {};
+< de >/script
+
+< estilo >
+< estilo >
