@@ -1,0 +1,11 @@
+instalar dependências
+$ npm instalar
+
+sirva com recarga quente em localhost:3000
+$ npm executar dev
+
+construir para o servidor de produção e lançamento
+$ npm executar compilação $ npm início da corrida
+
+gerar projeto estático
+$ npm executar gerar
