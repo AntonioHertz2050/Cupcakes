@@ -1,0 +1,14 @@
+
+<modelo>
+  <div class="container mx-auto p-4">
+    <img src="@/assets/frete.png" alt="" class="mx-auto">
+  </div>
+</modelo>
+
+<script>
+exportar padrão {
+}
+</script>
+
+<estilo>
+</estilo>
