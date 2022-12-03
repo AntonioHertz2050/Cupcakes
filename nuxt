@@ -1,0 +1,62 @@
+exportação  padrão  {
+Cabeçalhos de página globais: https://go.nuxtjs.dev/config-head
+  cabeça : {
+    título : 'Cupcakes Doces' ,
+    htmlAttrs : {
+      lang : 'pt'
+    } ,
+    meta : [
+      { conjunto de  caracteres : 'utf-8'  } ,
+      {  name : 'viewport' ,  content : 'width=device-width, initial-scale=1'  } ,
+      {  hid : 'descrição' ,  nome : 'descrição' ,  conteúdo : ''  } ,
+      {  nome : 'detecção de formato' ,  conteúdo : 'telefone=não'  }
+    ] ,
+    ligação : [
+      {  rel : 'icon' ,  digite : 'image/x-icon' ,  href : '/favicon.ico'  } ,
+    ]
+  } ,
+
+CSS Global: https://go.nuxtjs.dev/config-css
+  css : [
+'@fortawesome/fontawesome-svg-core/styles.css,
+'~/ativos/principal.css'
+  ] ,
+
+Plugins para executar antes de renderizar a página: https://go.nuxtjs.dev/config-plugins
+plug-ins : [
+'~/plugins/fontawesome.js',
+  ] ,
+
+Componentes de importação automática: https://go.nuxtjs.dev/config-components
+  componentes : {
+    dir : [
+      '~/componentes' ,
+      '~/componentes/átomos' ,
+      '~/componentes/moléculas' ,
+      '~/componentes/organismos' ,
+      '~/componentes/modelos'
+    ]
+  } ,
+
+Módulos para dev e build (recomendado): https://go.nuxtjs.dev/config-modules
+  módulos de construção : [
+https://go.nuxtjs.dev/tailwindcss
+«@nuxtjs/tailwindcss» ,
+  ] ,
+
+Módulos: https://go.nuxtjs.dev/config-modules
+  módulos : [
+https://go.nuxtjs.dev/axios
+«@nuxtjs/axios» ,
+  ] ,
+
+Configuração do módulo Axios: https://go.nuxtjs.dev/config-axios
+  axios : {
+Solução alternativa para evitar a imposição de localhost codificado: 3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL : '/' ,
+  } ,
+
+Configuração da compilação: https://go.nuxtjs.dev/config-build
+  construir : {
+  } ,
+}
