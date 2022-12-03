@@ -1,0 +1,27 @@
+< modelo >
+< div class = " container mx-auto border border-pink-500 arredondado p-4 grid grid-cols-2 grid-rows-1 " >
+    < div  classe = " " >
+< classe h1 = " text-pink-500 text-5xl pb-4 " >Sobre a < h1 class = " fontsweety inline " >Sweety Cupcakes</ h1 ></ h1 >
+        < p  class = " text-gray-500 text-1xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mod. Est labore fuga eveniet aliquid sapiente, illum quibusdam reprehenderit ducimus voluptatum eos consequuntur, fugit vel dolorum id aliquam similique corrupti ?
+        < p  class = " text-gray-500 text-1xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mod. Est labore fuga eveniet aliquid sapiente, illum quibusdam reprehenderit ducimus voluptatum eos consequuntur, fugit vel dolorum id aliquam similique corrupti ?
+        < p  class = " text-gray-500 text-1xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mod. Est labore fuga eveniet aliquid sapiente, illum quibusdam reprehenderit ducimus voluptatum eos consequuntur, fugit vel dolorum id aliquam similique corrupti ?
+        < p  class = " text-gray-500 text-1xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mod. Est labore fuga eveniet aliquid sapiente, illum quibusdam reprehenderit ducimus voluptatum eos consequuntur, fugit vel dolorum id aliquam similique corrupti ?
+        < p  class = " text-gray-500 text-1xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mod. Est labore fuga eveniet aliquid sapiente, illum quibusdam reprehenderit ducimus voluptatum eos consequuntur, fugit vel dolorum id aliquam similique corrupti ?
+        < p  class = " text-gray-500 text-1xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mod. Est labore fuga eveniet aliquid sapiente, illum quibusdam reprehenderit ducimus voluptatum eos consequuntur, fugit vel dolorum id aliquam similique corrupti ?
+< >/div
+    < div  classe = " " >
+        < img  src = " @/assets/logo.png "  alt = " "  class = " mx-auto " >
+< >/div
+    < div >
+        
+< >/div
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+}
+< de >/script
+
+< estilo >
+< estilo >
