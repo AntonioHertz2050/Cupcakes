@@ -1,0 +1,14 @@
+< modelo >
+  < div >
+    < Perguntas frequentes />
+    < Contato />
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+}
+< de >/script
+
+< estilo >
+< estilo >
