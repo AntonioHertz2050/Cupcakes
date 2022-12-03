@@ -1,0 +1,108 @@
+< modelo >
+< div >
+  < div  class = " container mx-auto pb-4 " >
+< classe h1 = " fontsweety text-pink-500 text-center text-4xl pb-4 " >Perguntas Frequentes</ h1 >
+< classe div = " w-4/5 mx-auto " >
+      < botão  class = " acordeão bg-pink-500 text-white hover:bg-pink-400 " >
+        Quais as opções de pagamento?
+      </ botão >
+      < div  classe = " painel " >
+        < div  classe = " p-4 " >
+          < p  class = " " >Cartão de Crédito e Débito em até 12x sem juros</ p >
+< classe p = " " >Boleto Bancário</ p >
+< classe p = " " >Pix</ p >
+< >/div
+< >/div
+      < botão  class = " acordeão bg-pink-500 text-white hover:bg-pink-400 " >
+        Quais as opções de pagamento?
+      </ botão >
+      < div  classe = " painel " >
+       < div  classe = " p-4 " >
+          < p  class = " " >Cartão de Crédito e Débito em até 12x sem juros</ p >
+< classe p = " " >Boleto Bancário</ p >
+< classe p = " " >Pix</ p >
+< >/div
+< >/div
+      < botão  class = " acordeão bg-pink-500 text-white hover:bg-pink-400 " >
+        Quais as opções de pagamento?
+      </ botão >
+      < div  classe = " painel " >
+        < div  classe = " p-4 " >
+          < p  class = " " >Cartão de Crédito e Débito em até 12x sem juros</ p >
+< classe p = " " >Boleto Bancário</ p >
+< classe p = " " >Pix</ p >
+< >/div
+< >/div
+      < botão  class = " acordeão bg-pink-500 text-white hover:bg-pink-400 " >
+        Quais as opções de pagamento?
+      </ botão >
+      < div  classe = " painel " >
+        < div  classe = " p-4 " >
+          < p  class = " " >Cartão de Crédito e Débito em até 12x sem juros</ p >
+< classe p = " " >Boleto Bancário</ p >
+< classe p = " " >Pix</ p >
+< >/div
+< >/div
+      < botão  class = " acordeão bg-pink-500 text-white hover:bg-pink-400 " >
+        Quais as opções de pagamento?
+      </ botão >
+      < div  classe = " painel " >
+        < div  classe = " p-4 " >
+          < p  class = " " >Cartão de Crédito e Débito em até 12x sem juros</ p >
+< classe p = " " >Boleto Bancário</ p >
+< classe p = " " >Pix</ p >
+< >/div
+< >/div
+      < botão  class = " acordeão bg-pink-500 text-white hover:bg-pink-400 " >
+        Quais as opções de pagamento?
+      </ botão >
+      < div  classe = " painel " >
+        < div  classe = " p-4 " >
+          < p  class = " " >Cartão de Crédito e Débito em até 12x sem juros</ p >
+< classe p = " " >Boleto Bancário</ p >
+< classe p = " " >Pix</ p >
+< >/div
+< >/div
+< >/div
+< >/div
+  < h >
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+  montado () {
+    var acc =  documento . getElementsByClassName ( " acordeão " );
+    var i;
+para (i = 0 ; i < acc . comprimento ; i ++ ) {
+      acc[i]. addEventListener ( " clique " , function () {
+isso . classList . alternar ( " ativo ");
+var painel = este . nextElementSibling ;
+        if ( painel . style . display  ===  " bloco " ) {
+          painel . estilo . display  =  " nenhum " ;
+        } senão {
+          painel . estilo . exibição  =  " bloco " ;
+        }
+      });
+    }
+  },
+};
+< de >/script
+
+< escopo do estilo  >
+.acordeão {
+  cursor : ponteiro ;
+  preenchimento : 18 px ;
+  largura : 100 % ;
+text-align : esquerda;
+  borda : nenhuma ;
+  contorno : nenhum ;
+  transição : 0,4 s ;
+}
+.painel {
+  preenchimento : 0  18 px ;
+  cor de fundo : branco ;
+  exibição : nenhum ;
+  estouro : oculto ;
+}
+< estilo >
