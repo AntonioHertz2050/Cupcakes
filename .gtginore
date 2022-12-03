@@ -1,0 +1,91 @@
+
+# Criado por .ignore plugin de suporte (hsz.mobi)
+### Modelo de nó
+# Logs
+/Logs
+*..log
+npm-debug.log*
+depuração de fios.log*
+yarn-error.log*
+
+# Dados de tempo de execução
+pids
+*.Pid
+*.semente
+*.pid.lock
+
+# Diretório para libs instrumentadas geradas por jscoverage/JSCover
+lib-cov
+
+# Diretório de cobertura usado por ferramentas como Istambul
+cobertura
+
+# Cobertura do teste nyc
+.nyc_output
+
+# Grunt armazenamento intermediário (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunhir
+
+# Diretório de dependência de Bower (https://bower.io/)
+bower_components
+
+# configuração node-waf
+.lock-wscript
+
+# Addons binários compilados (https://nodejs.org/api/addons.html)
+compilação/Lançamento
+
+# Diretórios de dependência
+node_modules/
+jspm_packages/
+
+# Arquivos de declaração TypeScript v1
+digitações/
+
+# Diretório de cache npm opcional
+.npm
+
+# Cache de eslint opcional
+.eslintcache
+
+# Histórico REPL opcional
+.node_repl_history
+
+# Saída do 'npm pack'
+*.tgz
+
+# Arquivo de integridade do Yarn
+.yarn-integridade
+
+# arquivo de variáveis de ambiente dotenv
+.Env
+
+# cache do empacotador de pacotes (https://parceljs.org/)
+.cache
+
+# próximo.js construir saída
+.próximo
+
+# nuxt.js construir saída
+.nuxt
+
+# Nuxt gerar
+Dist
+
+# vuepress construir saída
+.vuepress/dist
+
+# Diretórios sem servidor
+.serverless
+
+# IDE / Editor
+.idéia
+
+# Trabalhador de serviço
+SW.*
+
+# macOS
+.DS_Store
+
+# Arquivos de troca Vim
+*.swp
