@@ -1,0 +1,54 @@
+< modelo >
+  < div  classe = " " >
+< classe h1 = " text-pink-500 text-4xl font-black p-6 fontsweety " >{{ name }}</ h1 >
+< classe div = " grade grid-cols-3 gap-4 p-6 " >
+      < div  v-for = " i in comments " : key = " i "  class = " text-center p-4 " >
+< classe div = " border border-gray-100 p-4 " >
+< img : src = " takeImage ( i . img ) " alt = " Foto dos Clientes " classe = " borda branca-arredondada-md h-36 w-40 m-auto object-cover pb-3 " />
+          < h >
+< classe h1 = " fontsweety p-4 text-pink-500 " >{{ i . nome }}</ h1 >
+< classe h1 = " text-gray-500 " >{{ i . mensagem }}</ h1 >
+< >/div
+< >/div
+< >/div
+    < h >
+< >/div
+</ modelo >
+
+< de script >
+exportação  padrão {
+  dados () {
+    retornar {
+      nome :  " Avaliações " ,
+      comentários : [
+        {
+          nome :  " John Doe " ,
+          img :  ' perfil3.jpg ' ,
+          mensagem :
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos explicabo ratione voluptatem ut repellendus hic, blanditiis magnam sit perferendis quisquam, sint aspernatur sequi expedita itaque, eaque pariatur molestiae amet! " ,
+        },
+        {
+          nome :  " Jane Doe " ,
+          img :  ' perfil2.jpg ' ,
+          mensagem :
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos explicabo ratione voluptatem ut repellendus hic, blanditiis magnam sit perferendis quisquam, sint aspernatur sequi expedita itaque, eaque pariatur molestiae amet! " ,
+        },
+        {
+          nome :  " Jane Doe " ,
+          img :  ' perfil1.jpg ' ,
+          mensagem :
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos explicabo ratione voluptatem ut repellendus hic, blanditiis magnam sit perferendis quisquam, sint aspernatur sequi expedita itaque, eaque pariatur molestiae amet! " ,
+        },
+      ],
+    };
+  },
+  métodos : {
+    takeImage ( img ) {
+return require ( ' @/assets/profiles/ ${ img } ' )
+    },
+  }
+};
+< de >/script
+
+< estilo >
+< estilo >
