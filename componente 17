@@ -1,0 +1,16 @@
+< modelo >
+< classe de rodapé = " container mx-auto flex items-center justify-center content-between h-40 p-6 " >
+    < Logotipo />
+    < Classe MenuFooter  = " flex-auto " />
+    < classe EmailForm  = " flex-auto " />
+    < SocialMenu />
+  </ rodapé >
+</ modelo >
+
+< de script >
+exportação  padrão {
+}
+< de >/script
+
+< estilo >
+< estilo >
