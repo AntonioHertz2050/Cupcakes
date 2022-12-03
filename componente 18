@@ -1,0 +1,15 @@
+< modelo >
+  < cabeçalho  class = " container mx-auto ml-auto flex flex-row h-24 items-center-justify-center " >
+< Classe Logo = " base-1/4 " />
+< Classe de menu = " base-1/2 " />
+    < classe CartButton  = " base-1/4 " />
+  </ cabeçalho >
+</ modelo >
+
+< de script >
+exportação  padrão {
+}
+< de >/script
+
+< estilo >
+< estilo >
